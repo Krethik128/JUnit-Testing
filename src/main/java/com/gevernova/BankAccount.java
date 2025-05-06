@@ -1,4 +1,4 @@
-package org.example.advance;
+package com.gevernova;
 
 public class BankAccount {
     private double balance;

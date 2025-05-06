@@ -1,6 +1,4 @@
-package Basic;
-
-import org.example.basic.Calculator;
+import com.gevernova.Calculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,6 +1,4 @@
-package Advance;
-
-import org.example.advance.BankAccount;
+import com.gevernova.BankAccount;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package org.example.basic;
+package com.gevernova;
 
 import java.util.List;
 

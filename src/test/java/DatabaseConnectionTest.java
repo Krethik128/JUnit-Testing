@@ -1,6 +1,4 @@
-package Basic;
-
-import org.example.basic.DatabaseConnection;
+import com.gevernova.DatabaseConnection;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;

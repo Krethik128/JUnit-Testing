@@ -1,4 +1,4 @@
-package org.example.basic;
+package com.gevernova;
 
 public class Calculator {
     public int add(int a, int b) {

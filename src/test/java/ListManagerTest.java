@@ -1,6 +1,4 @@
-package Basic;
-
-import org.example.basic.ListManager;
+import com.gevernova.ListManager;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

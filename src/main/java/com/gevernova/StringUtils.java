@@ -1,4 +1,4 @@
-package org.example.basic;
+package com.gevernova;
 
 public class StringUtils {
         public static String reverse(String str){

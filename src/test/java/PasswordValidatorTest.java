@@ -1,6 +1,4 @@
-package Advance;
-
-import org.example.advance.PasswordValidator;
+import com.gevernova.PasswordValidator;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,4 +1,4 @@
-package org.example.basic;
+package com.gevernova;
 
 public class NumberUtils {
 
