@@ -1,4 +1,6 @@
-import org.example.ListManager;
+package Basic;
+
+import org.example.basic.ListManager;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

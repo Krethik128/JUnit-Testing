@@ -1,4 +1,6 @@
-import org.example.DatabaseConnection;
+package Basic;
+
+import org.example.basic.DatabaseConnection;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;

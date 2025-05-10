@@ -1,4 +1,6 @@
-import org.example.Calculator;
+package Basic;
+
+import org.example.basic.Calculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
