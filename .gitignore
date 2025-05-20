@@ -39,3 +39,7 @@ build/
 
 pom.xml
 *.xml
+
+.idea
+
+.gitignore
