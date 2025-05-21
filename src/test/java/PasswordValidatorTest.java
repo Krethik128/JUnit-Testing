@@ -23,4 +23,10 @@ public class PasswordValidatorTest {
     void testMissingDigit() {
         assertFalse(PasswordValidator.isValid("StrongPass"));
     }
+    //Negative
+    @Test
+    void testMissingSpecialCharacter() {
+        assertFalse(PasswordValidator.isValid("StrongPass"));
+    }
+
 }

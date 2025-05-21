@@ -17,5 +17,12 @@ public class NumberUtilsTest {
     void testOddNumbers(int number) {
         assertFalse(NumberUtils.isEven(number));
     }
+
+    //Negative
+    @ParameterizedTest
+    @ValueSource(ints = {-1, 0, 11})
+    void testNegativeNumbers(int number) {
+        assertThrows(IllegalArgumentException.class, () -> NumberUtils.isEven(number));
+    }
 }
 

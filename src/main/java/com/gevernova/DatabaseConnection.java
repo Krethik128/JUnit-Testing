@@ -1,5 +1,6 @@
 package com.gevernova;
 
+
 public class DatabaseConnection {
     private boolean connected;
 

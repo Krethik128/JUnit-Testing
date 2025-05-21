@@ -6,25 +6,52 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class BankAccountTest {
-    BankAccount account;
-    @BeforeEach void setup(){
-        account=new BankAccount();
+
+    private BankAccount bankAccount;
+
+    @BeforeEach
+    void setUp() {
+        // Initialize bankAccount once before each test
+        bankAccount = new BankAccount();
     }
+
+    // Positive Test Cases
+
     @Test
-    void testDepositBalance() {
-        account.deposit(100.0);
-        assertEquals(100.0, account.getBalance());
-        System.out.print("Test is executed");
+    void testDeposit() {
+        bankAccount.deposit(10);
+        assertEquals(10, bankAccount.getBalance(), "Balance should be 10 after depositing 10");
     }
+
     @Test
-    void testWithdrawBalance() {
-        account.deposit(200.0);
-        account.withdraw(50.0);
-        assertEquals(150.0, account.getBalance());
+    void testWithdraw() {
+        bankAccount.deposit(10);
+        bankAccount.withdraw(10);
+        assertEquals(0, bankAccount.getBalance(), "Balance should be 0 after withdrawing all funds");
     }
+
+    // Negative Test Cases
+
     @Test
-    void testThrowsIfInsufficientFunds() {
-        account.deposit(50.0);
-        assertThrows(IllegalArgumentException.class, () -> account.withdraw(100.0));
+    void testWithdrawWithInsufficientFunds() {
+        bankAccount.deposit(10);
+        assertThrows(IllegalArgumentException.class,
+                () -> bankAccount.withdraw(100),
+                "Withdrawing more than the balance should throw IllegalArgumentException");
+    }
+
+    @Test
+    void testDepositNegativeAmount() {
+        assertThrows(IllegalArgumentException.class,
+                () -> bankAccount.deposit(-5),
+                "Depositing negative amount should throw IllegalArgumentException");
+    }
+
+    @Test
+    void testWithdrawNegativeAmount() {
+        bankAccount.deposit(20);
+        assertThrows(IllegalArgumentException.class,
+                () -> bankAccount.withdraw(-10),
+                "Withdrawing negative amount should throw IllegalArgumentException");
     }
 }
