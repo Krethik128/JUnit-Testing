@@ -1,6 +1,7 @@
-import com.gevernova.ListManager;
+package com.gevernova;
+
 import org.junit.jupiter.api.Test;
-import com.gevernova.ListManager;
+
 import java.util.ArrayList;
 import java.util.List;
 

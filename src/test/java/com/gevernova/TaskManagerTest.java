@@ -1,4 +1,5 @@
-import com.gevernova.TaskManager;
+package com.gevernova;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 

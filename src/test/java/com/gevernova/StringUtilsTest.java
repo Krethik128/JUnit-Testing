@@ -1,4 +1,5 @@
-import com.gevernova.StringUtility;
+package com.gevernova;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

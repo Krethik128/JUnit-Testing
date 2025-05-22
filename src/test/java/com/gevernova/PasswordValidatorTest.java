@@ -1,8 +1,12 @@
-import com.gevernova.PasswordValidator;
+package com.gevernova;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class PasswordValidatorTest {
+
+    PasswordValidator validator = new PasswordValidator();
 
     @Test
     void testValidPassword() {
@@ -27,6 +31,10 @@ public class PasswordValidatorTest {
     @Test
     void testMissingSpecialCharacter() {
         assertFalse(PasswordValidator.isValid("StrongPass"));
+    }
+    @Test
+    void testPasswordWithSpecialCharsOnly() {
+        Assertions.assertFalse(validator.isValid("!@#$%^&*()"));
     }
 
 }

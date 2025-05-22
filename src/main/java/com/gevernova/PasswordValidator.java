@@ -12,9 +12,15 @@ public class PasswordValidator {
     }
 
         public static boolean isValid(String password) {
-            return password != null &&
-                    password.length() >= 8 &&
-                    password.matches(".*[A-Z].*") &&
-                    password.matches(".*\\d.*");
+            if (password == null || password.length() < 8) return false;
+            boolean hasUpper = false, hasLower = false, hasDigit = false;
+
+            for (char c : password.toCharArray()) {
+                if (Character.isUpperCase(c)) hasUpper = true;
+                else if (Character.isLowerCase(c)) hasLower = true;
+                else if (Character.isDigit(c)) hasDigit = true;
+                else if (Character.isWhitespace(c)) return false;
+            }
+            return hasUpper && hasLower && hasDigit;
         }
 }

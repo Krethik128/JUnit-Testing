@@ -1,4 +1,5 @@
-import com.gevernova.BankAccount;
+package com.gevernova;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +12,7 @@ public class BankAccountTest {
 
     @BeforeEach
     void setUp() {
-        // Initialize bankAccount once before each test
+        // Initialize a bankAccount once before each test
         bankAccount = new BankAccount();
     }
 

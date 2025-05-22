@@ -1,4 +1,5 @@
-import com.gevernova.NumberUtils;
+package com.gevernova;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 

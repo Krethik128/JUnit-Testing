@@ -1,4 +1,5 @@
-import com.gevernova.Calculator;
+package com.gevernova;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -64,7 +65,7 @@ public class CalculateTest {
         assertEquals(0, calculate.multiply(5, 0), "5 * 0 should be 0");
     }
 
-    // Optional: test divide resulting in fraction (if your method returns int, expect truncated result)
+    // Optional: test divide resulting in a fraction (if your method returns int, expect a truncated result)
     @Test
     public void testDivideWithNonIntegerResult() {
         assertEquals(2, calculate.divide(5, 2), "5 / 2 should be 2 (integer division)");
